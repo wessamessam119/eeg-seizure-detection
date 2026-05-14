@@ -1,7 +1,5 @@
 🧠 EEG Seizure Detection — Ensemble Machine Learning
-
 > Real-time EEG signal analysis and automated seizure detection using a voting ensemble of machine learning classifiers.
-
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![ML](https://img.shields.io/badge/ML-Ensemble%20Classifier-orange?style=flat-square)
@@ -109,10 +107,10 @@ eeg-seizure-detection/
 └── .gitignore
 ```
 ---
-🛠️ Tech Stack
+🛠️ Tech Stack  
 `Python 3.8+` · `PyQt5` · `pyqtgraph` · `scikit-learn` · `NumPy` · `SciPy` · `MNE` · `matplotlib` · `XGBoost`
 ---
-📄 License
+📄 License  
 This project is licensed under the MIT License — see LICENSE for details.
 ---
 **🙋‍♀️ Author**  
