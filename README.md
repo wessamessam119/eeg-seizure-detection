@@ -8,8 +8,7 @@
 ---
 
 ## 📌 Overview
-This system provides real-time EEG signal monitoring, feature extraction, and seizure classification using multiple machine learning models trained on clinical EEG data. It combines classical signal processing with ensemble learning to achieve robust neurological event detection.
-
+Real-time EEG monitoring and seizure detection using ensemble machine learning and signal processing techniques.
 ---
 
 ## ✨ Features
@@ -52,16 +51,15 @@ This system provides real-time EEG signal monitoring, feature extraction, and se
 - Final Decision (threshold-based)
 
 ---
+## 🖼️ Screenshots
 
-## 📊 Extracted Feature Groups
+### Real-Time Monitoring
+![Real-Time Monitoring](real_time_monitoring.png)
 
-- Time-domain: mean, std, variance, RMS, skewness, kurtosis, line length  
-- Spectral: band powers (δ θ α β γ), spectral centroid, SEF50/SEF90  
-- Nonlinear: entropy, Hjorth mobility & complexity, Teager energy  
-- Complexity: Lempel-Ziv complexity, fractal dimension  
-- Cross-channel: correlation, hemispheric asymmetry  
-
+### Classification Results
+![Classification Results](classification_results_dashboard.png)
 ---
+
 **🚀 Installation**
 ```bash
 # Clone the repository
@@ -81,31 +79,6 @@ pip install xgboost
 python final.py
 ```
 
-## 🔄 Workflow
-- Load File — import .edf, .npy, .mat, .csv EEG recording  
-- Apply preprocessing filters  
-- Extract features + generate band power  
-- Train model (normal vs abnormal EEG)  
-- Run classification with probability timeline  
-- Export visualization results  
-
----
-**🖼️ Screenshots**
-| Real-Time Monitoring | Classification Results |
-|----------------------|------------------------|
-| ![img](real_time_monitoring.png) | ![img](classification_results_dashboard.png) |
----
-**🗂️ Project Structure**
-```
-eeg-seizure-detection/
-├── final.py                          # Main application
-├── real_time_monitoring.png          # UI screenshot
-├── classification_results_dashboard.png
-├── workflow_diagram.png
-├── README.md
-├── LICENSE
-└── .gitignore
-```
 ---
 🛠️ Tech Stack  
 `Python 3.8+` · `PyQt5` · `pyqtgraph` · `scikit-learn` · `NumPy` · `SciPy` · `MNE` · `matplotlib` · `XGBoost`
